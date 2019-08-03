@@ -1,0 +1,97 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "addScheduleDialog"
+			"title": "Add Schedule"
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "undoLabel"
+				"text": "待办事项："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 25
+				"width": 110
+				"height": 20
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "undoTextField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 120
+				"y": 25
+				"width": 140
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "remarkLabel"
+				"text": "备注："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 95
+				"height": 20
+				"x": 30
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "timeLabel"
+				"text": "时间："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 110
+				"height": 20
+				"x": 30
+				"y": 75
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "chooseTypeLabel"
+				"text": "选择类别"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 110
+				"height": 20
+				"x": 30
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 120
+				"y": 175
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "timeTextField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 21
+				"x": 120
+				"y": 75
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "remarkTextField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 21
+				"x": 120
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "okButton"
+				"text": "确定"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 175
+				"y": 285
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancelButton"
+				"text": "取消"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 57
+				"height": 23
+				"x": 260
+				"y": 285
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 120, 0 )
+			"size": new java.awt.Dimension( 360, 375 )
+		} )
+	}
+}

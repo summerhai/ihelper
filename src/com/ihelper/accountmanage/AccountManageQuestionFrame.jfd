@@ -1,0 +1,138 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainFrame"
+			"title": "ihelper"
+			"name": "mainFrame"
+			"$sizePolicy": 0
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accountButton"
+				"text": "账号管理"
+				"autoscrolls": true
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 80
+				"width": 90
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scheduleButton"
+				"text": "日程安排"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 150
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "studyButton"
+				"text": "学习笔记"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 220
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "moneyButton"
+				"text": "财务管理"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 290
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mainLabel"
+				"text": "专为学生群体设计的的智能助理软件ihelper"
+				"foreground": sfield java.awt.Color green
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 130
+				"y": 5
+				"width": 380
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adviceButton"
+				"text": "建议反馈"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "accountManageJPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "提示：查看账号需要回答你的专属问题（第一次需要设置问题哦）"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 55
+					"y": 25
+					"width": 355
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "questionLabel"
+					"text": "请输入你的问题："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 100
+					"y": 75
+					"width": 115
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "answerLabel"
+					"text": "问题的答案："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 100
+					"y": 115
+					"width": 95
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "answerTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 175
+					"height": 25
+					"x": 240
+					"y": 110
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "questionTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 175
+					"height": 25
+					"x": 240
+					"y": 70
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton"
+					"text": "确定"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 365
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "重置"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 57
+					"height": 23
+					"x": 285
+					"y": 190
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 645
+				"height": 420
+				"x": 125
+				"y": 70
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 0 )
+			"size": new java.awt.Dimension( 820, 530 )
+		} )
+	}
+}

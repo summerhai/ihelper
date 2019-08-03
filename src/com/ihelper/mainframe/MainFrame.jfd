@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainFrame"
+			"title": "ihelper"
+			"name": "mainFrame"
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accountButton"
+				"text": "账号管理"
+				"autoscrolls": true
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "accountButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 60
+				"width": 90
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scheduleButton"
+				"text": "日程安排"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scheduleButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "studyButton"
+				"text": "学习笔记"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "moneyButton"
+				"text": "财务管理"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 270
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mainLabel"
+				"text": "专为学生群体设计的的智能助理软件ihelper"
+				"foreground": sfield java.awt.Color green
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 5
+				"width": 380
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adviceButton"
+				"text": "建议反馈"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 340
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 640
+				"height": 420
+				"x": 125
+				"y": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 820, 530 )
+		} )
+	}
+}

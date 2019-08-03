@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="E:/workspaces/ihelper/lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/workspaces/ihelper/lib/hg.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/workspaces/ihelper/lib/mail.jar"/>
+	<classpathentry kind="lib" path="E:/workspaces/ihelper/lib/junit4.4.jar"/>
+	<classpathentry kind="lib" path="E:/workspaces/ihelper/lib/sqlserver.jar"/>
+	<classpathentry kind="lib" path="E:/workspaces/ihelper/lib/zxing.jar"/>
+	<classpathentry kind="lib" path="E:/workspaces/ihelper/lib/rt.jar"/>
+	<classpathentry kind="lib" path="E:/workspaces/ihelper/lib/substance5.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

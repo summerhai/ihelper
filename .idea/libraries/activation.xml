@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="activation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hg.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqlserver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/substance5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zxing.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

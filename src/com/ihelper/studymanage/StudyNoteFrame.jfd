@@ -1,0 +1,148 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainFrame"
+			"title": "ihelper"
+			"name": "mainFrame"
+			"visible": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accountButton"
+				"text": "账号管理"
+				"autoscrolls": true
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "accountButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "accountButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 60
+				"width": 90
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scheduleButton"
+				"text": "日程安排"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "studyButton"
+				"text": "学习笔记"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "moneyButton"
+				"text": "财务管理"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 270
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mainLabel"
+				"text": "专为学生群体设计的的智能助理软件ihelper"
+				"foreground": sfield java.awt.Color green
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 5
+				"width": 380
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adviceButton"
+				"text": "建议反馈"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 25
+				"x": 30
+				"y": 340
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "studyNoteJPanel"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "studyNoteScrollPane"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 80
+					"y": 70
+					"width": 510
+					"height": 270
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "message1Label"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 70
+					"height": 265
+					"width": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "message2Label"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 50
+					"height": 265
+					"x": 605
+					"y": 70
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addNewNoteButton"
+					"text": "新建"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 125
+					"y": 40
+					"height": 23
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "searchTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 415
+					"y": 40
+					"width": 105
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchButton"
+					"text": "查找"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 57
+					"height": 23
+					"x": 530
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteNoteButton"
+					"text": "删除"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 57
+					"height": 23
+					"x": 230
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "messageButton"
+					"text": "励志语"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 23
+					"x": 320
+					"y": 40
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 665
+				"height": 365
+				"x": 125
+				"y": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 820, 530 )
+			"location": new java.awt.Point( 15, 0 )
+		} )
+	}
+}

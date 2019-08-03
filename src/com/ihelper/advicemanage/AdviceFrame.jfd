@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_03" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainFrame"
+			"title": "ihelper"
+			"name": "mainFrame"
+			"visible": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "adviceManageJPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "adviceLabel"
+					"text": "<html>如果您发现ihelper的任何不足，或者您对我们的产品有任何的建议，我都将虚心接受，<br>好的产品应该能够接受实践的检验。<br>如还有任何疑问，请发邮件至ihelper_foryou@126.com，我会悉心为您解答，祝您使用愉快！"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 30
+					"width": 555
+					"height": 70
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "adviceScrollPane"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "adviceTextArea"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 75
+					"y": 110
+					"width": 455
+					"height": 140
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitButton"
+					"text": "提交"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 445
+					"y": 300
+					"width": 70
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "emailLabel"
+					"text": "您的邮箱："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 270
+					"width": 90
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 200
+					"y": 270
+					"width": 195
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "emailPasswordLabel"
+					"text": "邮箱的密码："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 90
+					"height": 15
+					"x": 90
+					"y": 305
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailPasswordTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 195
+					"height": 21
+					"x": 200
+					"y": 305
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 665
+				"height": 365
+				"x": 125
+				"y": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 820, 530 )
+			"location": new java.awt.Point( 70, 0 )
+		} )
+	}
+}
